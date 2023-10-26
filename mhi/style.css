@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 body {
   margin: 0;
 	background-color:#fff;
@@ -83,8 +86,22 @@ body {
 }
 .topnav #menu{
 	display:table-cell;
+	width: auto;
 	vertical-align: bottom;
 }
+
+.topnav #menu input{
+	display:table-cell;
+	vertical-align: bottom;
+	background:#F1FF90;
+	border:2px solid #F189FF;
+	color:#E630FF;
+	margin:5px;
+	padding:5px;
+	
+	
+}
+
 
 .topnav a {
   float: left;
