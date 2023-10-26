@@ -1,15 +1,15 @@
-@charset "utf-8";
-/* CSS Document */
-
 body {
   margin: 0;
 	background-color:#fff;
   font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
 }
 
 .body-container{
-	width: 100%;
-	overflow: auto;
+	width: 80%;
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:visible;
 	margin:0px;
 	display: block;
 }
@@ -18,27 +18,28 @@ body {
 	display: block;
 	float: left;
 	width: 328px;
-	min-height: 600px;
-	max-height: 100%;
+
+	height: inherit;
 }
 .body-container #main{
 	background:#fff;
 	display: block;
 	float: left;
+	overflow-x:hidden; 
 	padding:30px;
 	font: arial;
 	
 }
 .body-container #main p{
 	color: #000;
-	font: 12px bold;
+	font: 16px bold normal;
 	font-family: Arial, Helvetica, sans-serif;
-	
+	line-height: 1.4em;
 }
 
 .body-container #main a{
 	color: #000;
-	font: 12px bold;
+	font-weight:bold;
 	font-family: Arial, Helvetica, sans-serif;
 	background:#D0FF26;
 	text-decoration: none;
@@ -61,6 +62,7 @@ body {
 }
 .footer{
 	width: 100%;
+	overflow-x: hidden;
 	font-size: 8pt;
 	color: aliceblue;
 	align-content: center;
@@ -76,6 +78,7 @@ body {
 	display: table;
   background-color: #fff;
 	width: 100%;
+	background:#F1FF90;
 
 }
 .topnav #menu{
@@ -88,6 +91,7 @@ body {
   display: block;
   color: #333;
   text-align: center;
+	font-weight:bold;
   padding: 12px 20px;
   text-decoration: none;
   font-size: 17px;
