@@ -84,13 +84,13 @@ body {
 	background:#F1FF90;
 
 }
-.topnav #menu{
+.topnav .menu{
 	display:table-cell;
 	width: auto;
 	vertical-align: bottom;
 }
 
-.topnav #menu input{
+.topnav .menu input{
 	display:table-cell;
 	vertical-align: bottom;
 	background:#F1FF90;
