@@ -7,37 +7,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
 }
-
+.content{
+	display:none;
+	float:left;
+}
 .body-container{
-	width: 80%;
-	height:100%;
-	overflow-x:hidden;
-	overflow-y:visible;
+	overflow:hidden;
 	margin:0px;
-	display: block;
+	display: flex;
+
 }
 .body-container #leftblock{
-	background:#000;
-	display: block;
-	float: left;
+	padding: 5px;
+	font-size: 9pt;
+	
+	color:#fff;
 	width: 328px;
-
-	height: inherit;
+	background-color:#000;
 }
 .body-container #main{
-	background:#fff;
-	display: block;
-	float: left;
-	overflow-x:hidden; 
-	padding:30px;
+	background-color:#fff;
+	padding-left:30px;
 	font: arial;
-	
+	wdith:100%;
+
 }
 .body-container #main p{
 	color: #000;
 	font: 16px bold normal;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.4em;
+	
 }
 
 .body-container #main a{
@@ -73,9 +73,15 @@ body {
 	background: #2279FF;
 	
 }
+h1{
+	font-size: 60px;
+	font-variant-caps:unicase;
+	font-weight:900;
+}
 .topnav {
   overflow: hidden;
 	padding-left: 350px;
+
 	height:150px;
 	float:top left;
 	display: table;
@@ -84,13 +90,13 @@ body {
 	background:#F1FF90;
 
 }
-.topnav .menu{
+.topnav #menu, .topnav #menu2{
 	display:table-cell;
-	width: auto;
+	
 	vertical-align: bottom;
 }
 
-.topnav .menu input{
+.topnav #menu2 input{
 	display:table-cell;
 	vertical-align: bottom;
 	background:#F1FF90;
@@ -109,10 +115,11 @@ body {
   color: #333;
   text-align: center;
 	font-weight:bold;
-  padding: 12px 20px;
+  padding: 10px 14px;
+	margin:2px;
   text-decoration: none;
   font-size: 17px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #F1FF90;
 }
 
 .topnav a:hover {
@@ -122,7 +129,7 @@ body {
 	border-bottom: 2px solid blue;
 }
 
-.topnav a.active {
+.topnav a.active, .topnav .active{
   background-color:springgreen;
 	font-weight:bold;
   color: #000;
@@ -131,4 +138,93 @@ body {
 
 .topnav .icon {
   display: none;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+	background-color: crimson;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
